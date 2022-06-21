@@ -1,0 +1,15 @@
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\bin\Debug\GraphicFileReader.exe.config
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\bin\Debug\GraphicFileReader.exe
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\bin\Debug\GraphicFileReader.pdb
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\GraphicFileReader.csprojAssemblyReference.cache
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\MainWindow.g.cs
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\App.g.cs
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\GraphicFileReader_MarkupCompile.cache
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\GraphicFileReader_MarkupCompile.lref
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\MainWindow.baml
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\GraphicFileReader.g.resources
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\GraphicFileReader.Properties.Resources.resources
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\GraphicFileReader.csproj.GenerateResource.cache
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\GraphicFileReader.csproj.CoreCompileInputs.cache
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\GraphicFileReader.exe
+C:\Users\Павел\Source\Repos\GraphicFileReader\GraphicFileReader\obj\Debug\GraphicFileReader.pdb

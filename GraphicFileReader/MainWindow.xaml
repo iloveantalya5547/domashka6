@@ -1,0 +1,68 @@
+﻿<Window x:Class="GraphicFileReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicFileReader"
+        mc:Ignorable="d"
+        Title="Image Reader" Height="450" Width="800">
+    <Window.Resources>
+        <Storyboard x:Key="OpenMenu">
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="-150,0,0,0" To="0,0,0,0" DecelerationRatio="0.9" Duration="0:0:0.5"/>
+        </Storyboard>
+
+        <Storyboard x:Key="CloseMenu">
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,0,0" To="-150,0,0,0" DecelerationRatio="0.9" Duration="0:0:0.5"/>
+        </Storyboard>
+
+    </Window.Resources>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="164*"/>
+            <RowDefinition Height="60*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Name="img" Margin="10,0,10,53" Grid.RowSpan="3" Grid.Row="1" />
+        <Menu Margin="0,0,0,34"  Height="20">
+            <MenuItem Header="File" Width="50" Height="20">
+                <MenuItem Header="_Open" Click="mnuOpen_Click"/>
+                <Separator />
+                <MenuItem Header="_Exit" Click="mnuExit_Click"/>
+            </MenuItem>
+        </Menu>
+        <StatusBar Grid.Row="3" Margin="0,47,0,0">
+            <StatusBarItem Margin="0,0,0,2" RenderTransformOrigin="0.5,0.5">
+                <StatusBarItem.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StatusBarItem.RenderTransform>
+                <ProgressBar Minimum="0" Maximum="100" Width="779" Height="24" RenderTransformOrigin="0.862,-1.879" Name="pbStatus" VerticalAlignment="Center" />
+            </StatusBarItem>
+        </StatusBar>
+        <StackPanel Panel.ZIndex="2" Name="LeftMenu" Orientation="Horizontal" HorizontalAlignment="Left" Margin='-150,0,0,0' Grid.RowSpan="3">
+            <Border BorderBrush="#AF1719" BorderThickness="1" Width="150" Background="GhostWhite">
+                <Grid>
+                    <Button Name="btnclose" Height="40" HorizontalAlignment="Stretch" VerticalAlignment="Top" Content="Close" FontWeight="SemiBold" HorizontalContentAlignment="Left" BorderBrush="AliceBlue" Margin="0,294,0,0"></Button>
+                    <ListBox Name="lbFiles" Margin="0,10,0,45">
+                        <ListBoxItem Background="LightGray">Recent Files</ListBoxItem>
+                    </ListBox>
+                </Grid>
+            </Border>
+            <StackPanel Orientation="Vertical">
+                <Grid Margin="0,250,0,0" RenderTransformOrigin="0.536,-1.731">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="17*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnshow" Width="20" Height="20" BorderThickness="0" Content="➤" ToolTip="Open Menu" RenderTransformOrigin="0.229,7.103" Grid.ColumnSpan="2"></Button>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
